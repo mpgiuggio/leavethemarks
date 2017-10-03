@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Leave the marks</title>
+        <% include partials/head.ejs %>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <% include partials/sidebarmenu.ejs %>
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <p align="center" class="headingFont">
+                                Leave the marks !!!
+                            </p>
+                            
+                            <blockquote class="mainLines">
+                                <code><%=loggedOutUser%></code> you have been successfully logged out.<br/>
+                                Please <a href="/login">login</a> to create your own story or just read other's <a href="/stories">stories</a>.
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% include partials/jsincludes.ejs %>
+
+    </body>
+
+</html>

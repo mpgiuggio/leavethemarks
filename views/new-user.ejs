@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <title>Leave the marks</title>
+        <% include partials/head.ejs %>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <% include partials/sidebarmenu.ejs %>
+            <!-- Page Content -->
+            <div id="page-content-wrapper">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+
+                            <p align="center" class="headingFont">
+                                Leave the marks !!!
+                            </p>
+
+                            <blockquote class="mainLines">
+                                Congratulations <code><%=session.newuser%></code>, your account have been created successfully and <br/>
+                                <!--Please <a href="/login">login</a> to create your own story and share it with the world.-->
+                                you are now logged in. Create your first <a href="/new-story">story</a> now.
+                            </blockquote>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <% include partials/jsincludes.ejs %>
+
+    </body>
+
+</html>

@@ -1,0 +1,39 @@
+<div id="sidebar-wrapper">
+       <ul class="sidebar-nav">
+            <li class="sidebar-brand">
+                  <a class="brandFont" align="center" href="/">
+                        Leave the marks !!!
+                  </a>
+            </li>
+            <li>
+                  <div align="center">
+                        <img class="img-circle" src="/images/logo.png"/>
+                  </div>
+            </li>
+            <li>
+                  <a class="menus" align="center" href="/stories">Stories</a>
+            </li>
+            <li>
+                  <a class="menus" align="center" href="/new-story">Share your own story</a>
+            </li>
+            <li>
+                  <a class="menus" align="center" href="/tech-stack">Tech stack</a>
+            </li>
+
+
+            <% if(!session || typeof(session.loggedIn) == "undefined") {%>
+                  <li>
+                        <div>
+                               <a type="button" href="/login" class="btn btn-primary btn-lg outline">Login</a>
+                               <a type="button" href="/register" class="btn btn-danger btn-lg outline">Sign Up</a>
+                        </div>
+                  </li>
+            <%} else {%>
+                  <li>
+                        <div>
+                              <a type="button" align="center" href="/logout" class="btn btn-danger btn-lg outline">Logout</a>
+                        </div>
+                  </li>
+            <%}%>
+      </ul>
+</div>
